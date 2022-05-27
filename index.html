@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+</head>
+<body>
+    <div id = "home">
+        <button id = "home__single">
+            Single player
+        </button>
+        <button id = "home__double">
+            Two players
+        </button>
+    </div>
+    <div id = "single">
+        <div id = "single__main">
+            <p id = "single__numDisplay">Press roll! <br> Roll a one, you lose <br> Reach 20, you win</p> 
+            <img id = "single__diceDisplay">
+        </div>
+        <footer>
+            <button id = "single__roll">
+                <p>Roll</p>
+            </button>
+        </footer>
+    </div>
+    <div id = "double">
+        <div id = "double__main">
+            <div id = "p1Display"><p>Press roll! <br> First to 20 wins</p></div>
+            <img id = "p1DiceDisplay">
+            <div id = "p2Display"><p>Press roll! <br> Who will get there first?</p></div>
+            <img id = "p2DiceDisplay">
+        </div>    
+        <footer>      
+            <button id = "double__hold1">
+                <p>Hold</p>
+            </button>  
+            <button id = "double__roll1">
+                <p>Player 1 roll</p>
+            </button>            
+            <button id = "double__roll2">
+                <p>Player 2 roll</p>
+            </button>
+            <button id = "double__hold2">
+                <p>Hold</p>
+            </button>
+        </footer>        
+    </div>
+    <script src = "app.js"></script>
+</body>
+</html>
