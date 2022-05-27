@@ -13,6 +13,8 @@ body{
 
 /* Footer / Game Buttons */
 
+
+
 footer{
     display:flex;
     width: 100vw;
@@ -30,15 +32,30 @@ button{
     border-radius: 1pc;
 }
 
+/* Home page */
+
+@keyframes homepage-fly{
+    0%   {background-color:black}
+    100% {background-color:white;}
+
+}
+
 #home{
     width:100vw;
     height: 100vh;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
+    animation-name: homepage-fly;
+    animation-duration: 5s;
 }
 
 /* Single player page */
+
+@keyframes bgchange {
+    from {background-color: rgba(193, 193, 193, 0.721);;}
+    to {background-color: rgb(131, 249, 101);}
+  }
 
 #single__numDisplay{
     font-size:3em;
@@ -52,7 +69,8 @@ button{
     width:50vw;
     height:30vh;
     border-radius: 3pc;;
-    background-color: rgba(193, 193, 193, 0.721);
+    animation-name: bgchange;
+    animation-duration: 5s;
 }
 
 #single__diceDisplay{
